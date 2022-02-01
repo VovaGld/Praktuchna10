@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Praktuchna10.cpp" />
     <ClCompile Include="Size.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
