@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Praktuchna10.cpp" />
+    <ClCompile Include="Size.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
