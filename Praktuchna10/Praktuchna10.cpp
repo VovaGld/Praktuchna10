@@ -5,30 +5,46 @@
 int main()
 {
     setlocale(LC_CTYPE, "ukr");
-    int rowA, colA, rowB, colB, colC, rowC;
+    int rowA, colA, rowB, colB, colSum, rowSum, colMulti, rowMulti;
+
     rowA = size();
     colA = size();
     int** A = new int*[colA];
     for (int i = 0; i < colA; i++) {
         A[i] = new int[rowA];
     }
+
     rowB = size();
     colB = size();
     int** B = new int* [colB];
     for (int i = 0; i < colB; i++) {
         B[i] = new int[rowB];
     }
+
     if (colA >= colB)
-        colC = colA;
+        colSum = colA;
     else
-        colC = colB;
+        colSum = colB;
     if (rowA >= rowB)
-        rowC = rowA;
+        rowSum = rowA;
     else
-        rowC = rowB;
-    int** C = new int* [colC];
-    for (int i = 0; i < colC; i++) {
-        C[i] = new int[rowC];
+        rowSum = rowB;
+    int** Sum = new int* [colSum];
+    for (int i = 0; i < colSum; i++) {
+        Sum[i] = new int[rowSum];
     }
+
+    if (colA == rowB) {
+        colMulti = rowA;
+        rowMulti = colB;
+        int** Multi = new int* [colMulti];
+        for (int i = 0; i < colMulti; i++) {
+            Sum[i] = new int[rowMulti];
+        }
+    }
+    else
+        printf("Множення не можливе");
+    
+
 }
 
