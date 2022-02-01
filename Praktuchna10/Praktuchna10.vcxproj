@@ -139,9 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InputA.cpp" />
+    <ClCompile Include="InputB.cpp" />
     <ClCompile Include="Praktuchna10.cpp" />
+    <ClCompile Include="PrintA.cpp" />
+    <ClCompile Include="PrintB.cpp" />
+    <ClCompile Include="PrintMulti.cpp" />
+    <ClCompile Include="PrintSum.cpp" />
     <ClCompile Include="Size.cpp" />
-    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
