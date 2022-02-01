@@ -44,7 +44,16 @@ int main()
     }
     else
         printf("Множення не можливе");
+    printf("Введіть значення матриці A: \n");
+    InputA(A, rowA, colA);
+    printf("Введіть значення матриці B: \n");
+    InputB(B, rowB, colB);
+    printf("Матриця А: \n");
+    PrintA(A, rowA, colA);
+    printf("Матриця B: \n");
+    PrintB(B, rowB, colB);
     
-   //Паша красавчык :) Володя тоже
+    
+    
 }
 
