@@ -53,6 +53,7 @@ int main()
     PrintA(A, rowA, colA);
     printf("Матриця B: \n");
     PrintB(B, rowB, colB);
+    SumMas(A, B, Sum, rowSum, colSum);
     PrintSum(Sum, rowSum, colSum);
     
 
