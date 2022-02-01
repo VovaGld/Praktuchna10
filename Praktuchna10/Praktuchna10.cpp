@@ -55,6 +55,6 @@ int main()
     PrintB(B, rowB, colB);
     
     
-    
+//ВАЛОДЯ ХАРОШИЙ    
 }
 
