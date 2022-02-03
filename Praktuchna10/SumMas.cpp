@@ -2,8 +2,8 @@
 
 void SumMas(int** A, int** B, int** Sum, int rowSum, int colSum,int colA,int rowA,int colB,int rowB) {
 	int a, b;
-	for (int i = 0; i <= rowSum; i++) {
-		for (int j = 0; j <= colSum; j++) {
+	for (int i = 0; i < rowSum; i++) {
+		for (int j = 0; j < colSum; j++) {
 			if (i < rowA && j < colA)
 				a = A[i][j];
 			else
