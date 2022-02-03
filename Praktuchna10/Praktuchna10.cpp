@@ -9,31 +9,36 @@ int main()
 
     rowA = size();
     colA = size();
-    int** A = new int*[colA];
-    for (int i = 0; i < colA; i++) {
-        A[i] = new int[rowA];
+    int** A = new int*[rowA];
+    for (int i = 0; i < rowA; i++) {
+        A[i] = new int[colA];
     }
+    printf("Введіть значення матриці A: \n");
+    InputA(A, rowA, colA);
 
     rowB = size();
     colB = size();
-    int** B = new int* [colB];
-    for (int i = 0; i < colB; i++) {
-        B[i] = new int[rowB];
+    int** B = new int* [rowB];
+    for (int i = 0; i < rowB; i++) {
+        B[i] = new int[colB];
     }
+    printf("Введіть значення матриці B: \n");
+    InputB(B, rowB, colB);
 
-    if (colA >= colB)
-        colSum = colA;
-    else
+    if (colA >= colB) 
+        colSum = colA;   
+    else 
         colSum = colB;
     if (rowA >= rowB)
         rowSum = rowA;
-    else
+    else 
         rowSum = rowB;
+    
     int** Sum = new int* [colSum];
     for (int i = 0; i < colSum; i++) {
         Sum[i] = new int[rowSum];
     }
-
+    printf("%d \n %d", rowSum, colSum);
     if (colA == rowB) {
         colMulti = rowA;
         rowMulti = colB;
@@ -44,16 +49,13 @@ int main()
     }
     else
         printf("Множення не можливе");
-   
-    printf("Введіть значення матриці A: \n");
-    InputA(A, rowA, colA);
-    printf("Введіть значення матриці B: \n");
-    InputB(B, rowB, colB);
+
     printf("Матриця А: \n");
     PrintA(A, rowA, colA);
     printf("Матриця B: \n");
     PrintB(B, rowB, colB);
-    SumMas(A, B, Sum, rowSum, colSum);
+    printf("Матриця Sum: \n");
+    SumMas(A, B, Sum, rowSum, colSum,colA,rowA,colB,rowB);
     PrintSum(Sum, rowSum, colSum);
     
 
