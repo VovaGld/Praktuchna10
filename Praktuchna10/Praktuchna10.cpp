@@ -47,9 +47,30 @@ int main()
     printf("Матриця Sum: \n");
     SumMas(A, B, Sum, rowSum, colSum,colA,rowA,colB,rowB);
     PrintSum(Sum, rowSum, colSum);
-    if (colA == rowB) {
-        colMulti = rowA;
-        rowMulti = colB;
+    printf("Введіть к-сть рядків матриці А2: ");
+    rowA2 = size();
+    printf("Введіть к-сть стовбців матриці А2: ");
+    colA2 = size();
+    int** A2 = new int* [rowA2];
+    for (int i = 0; i < rowA2; i++) {
+        A2[i] = new int[colA2];
+    }
+    printf("Введіть значення матриці A(Множення): \n");
+    InputA2(A2, rowA2, colA2);
+    printf("Введіть к-сть рядків матриці В2: ");
+    rowB2 = size();
+    printf("Введіть к-сть стовбців матриці В2: ");
+    colB2 = size();
+    int** B2 = new int* [rowB2];
+    for (int i = 0; i < rowB2; i++) {
+        B2[i] = new int[colB2];
+    }
+    printf("Введіть значення матриці B(Множення): \n");
+    InputB2(B2, rowB2, colB2);
+
+    if (colA2 == rowB2) {
+        colMulti = rowA2;
+        rowMulti = colB2;
         int** Multi = new int* [colMulti];
         for (int i = 0; i < colMulti; i++) {
             Multi[i] = new int[rowMulti];
