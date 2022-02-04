@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="InputA.cpp" />
     <ClCompile Include="InputB.cpp" />
+    <ClCompile Include="MultiMas.cpp" />
     <ClCompile Include="Praktuchna10.cpp" />
     <ClCompile Include="PrintA.cpp" />
     <ClCompile Include="PrintB.cpp" />

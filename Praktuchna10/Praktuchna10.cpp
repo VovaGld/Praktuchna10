@@ -38,18 +38,6 @@ int main()
     for (int i = 0; i < colSum; i++) {
         Sum[i] = new int[rowSum];
     }
-    printf("%d \n %d", rowSum, colSum);
-    if (colA == rowB) {
-        colMulti = rowA;
-        rowMulti = colB;
-        int** Multi = new int* [colMulti];
-        for (int i = 0; i < colMulti; i++) {
-            Sum[i] = new int[rowMulti];
-        }
-    }
-    else
-        printf("Множення не можливе");
-
     printf("Матриця А: \n");
     PrintA(A, rowA, colA);
     printf("Матриця B: \n");
@@ -57,7 +45,20 @@ int main()
     printf("Матриця Sum: \n");
     SumMas(A, B, Sum, rowSum, colSum,colA,rowA,colB,rowB);
     PrintSum(Sum, rowSum, colSum);
-    
+    if (colA == rowB) {
+        colMulti = rowA;
+        rowMulti = colB;
+        int** Multi = new int* [colMulti];
+        for (int i = 0; i < colMulti; i++) {
+            Multi[i] = new int[rowMulti];
+        }
+        printf("%d   %d\n", colMulti, rowMulti);
+        printf("Матриця Multi: \n");
+        MultiMas(A, B, Multi, rowMulti, colMulti, colA, rowA, colB, rowB);
+        PrintMulti(Multi, rowMulti, colMulti);
+    }
+    else
+        printf("Множення не можливе");
 
 }
 
