@@ -140,11 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="InputA.cpp" />
+    <ClCompile Include="InputA2.cpp" />
     <ClCompile Include="InputB.cpp" />
+    <ClCompile Include="InputB2.cpp" />
     <ClCompile Include="MultiMas.cpp" />
     <ClCompile Include="Praktuchna10.cpp" />
     <ClCompile Include="PrintA.cpp" />
+    <ClCompile Include="PrintA2.cpp" />
     <ClCompile Include="PrintB.cpp" />
+    <ClCompile Include="PrintB2.cpp" />
     <ClCompile Include="PrintMulti.cpp" />
     <ClCompile Include="PrintSum.cpp" />
     <ClCompile Include="Size.cpp" />
