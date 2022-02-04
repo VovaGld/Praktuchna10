@@ -45,6 +45,7 @@ int main()
     printf("Матриця Sum: \n");
     SumMas(A, B, Sum, rowSum, colSum,colA,rowA,colB,rowB);
     PrintSum(Sum, rowSum, colSum);
+
     if (colA == rowB) {
         colMulti = rowA;
         rowMulti = colB;
@@ -52,7 +53,6 @@ int main()
         for (int i = 0; i < colMulti; i++) {
             Multi[i] = new int[rowMulti];
         }
-        printf("%d   %d\n", colMulti, rowMulti);
         printf("Матриця Multi: \n");
         MultiMas(A, B, Multi, rowMulti, colMulti, colA, rowA, colB, rowB);
         PrintMulti(Multi, rowMulti, colMulti);
