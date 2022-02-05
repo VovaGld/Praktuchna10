@@ -10,5 +10,5 @@ void InputA2(int**, int, int);
 void InputB2(int**, int, int);
 void SumMas(int**, int**, int**, int, int,int,int,int,int);
 void PrintSum(int** , int , int );
-void MultiMas(int**, int**, int**, int, int, int, int, int, int);
+void MultiMas(int**, int**, int**, int, int, int);
 void PrintMulti(int**, int, int);
