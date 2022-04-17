@@ -145,12 +145,7 @@
     <ClCompile Include="InputB2.cpp" />
     <ClCompile Include="MultiMas.cpp" />
     <ClCompile Include="Praktuchna10.cpp" />
-    <ClCompile Include="PrintA.cpp" />
-    <ClCompile Include="PrintA2.cpp" />
-    <ClCompile Include="PrintB.cpp" />
-    <ClCompile Include="PrintB2.cpp" />
-    <ClCompile Include="PrintMulti.cpp" />
-    <ClCompile Include="PrintSum.cpp" />
+    <ClCompile Include="PrintMas.cpp" />
     <ClCompile Include="Size.cpp" />
     <ClCompile Include="SumMas.cpp" />
   </ItemGroup>

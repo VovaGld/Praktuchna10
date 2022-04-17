@@ -48,12 +48,12 @@ int main()
     }
 
     printf("Матриця А: \n");
-    PrintA(A, rowA, colA);
+    PrintMas(A, rowA, colA);
     printf("Матриця B: \n");
-    PrintB(B, rowB, colB);
+    PrintMas(B, rowB, colB);
     printf("Результат додавання матриць:: \n");
     SumMas(A, B, Sum, rowSum, colSum,colA,rowA,colB,rowB);
-    PrintSum(Sum, rowSum, colSum);
+    PrintMas(Sum, rowSum, colSum);
 
     printf("|---------------------------------------|\n");
     printf("|            Множення матриць           |\n");
@@ -82,9 +82,9 @@ int main()
     InputB2(B2, rowB2, colB2);
 
     printf("Матриця А: \n");
-    PrintA(A2, rowA2, colA2);
+    PrintMas(A2, rowA2, colA2);
     printf("Матриця B: \n");
-    PrintB(B2, rowB2, colB2);
+    PrintMas(B2, rowB2, colB2);
 
     if (colA2 == rowB2) {
         colMulti = rowA2;
@@ -95,7 +95,7 @@ int main()
         }
         printf("Результат множення матриць: \n");
         MultiMas(A2, B2, Multi, rowMulti, colMulti, colA2);
-        PrintMulti(Multi, rowMulti, colMulti);
+        PrintMas(Multi, rowMulti, colMulti);
     }
     else
         printf("Множення не можливе");
